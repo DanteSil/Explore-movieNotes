@@ -1,0 +1,19 @@
+export default {
+  COLORS: {
+    BACKGROUND_900: "#0D0C0F",
+    BACKGROUND_800: "#1C1B1E",
+    BACKGROUND_700: "#262529",
+    BACKGROUND_TAG: "#282124",
+
+    NOTE_COLOR: "hsla(349, 100%, 76%, 0.05)",
+    TAG_COLOR: "#312E38",
+
+
+    WHITE: "#F4EDE8",
+    PINK: "#FF859B ",
+
+    GRAY_200: "#948F99",
+    GRAY_100: "#CAC4CF",
+    GRAY_LINE: "#3E3B47"
+  }
+}
