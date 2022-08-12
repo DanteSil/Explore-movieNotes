@@ -6,7 +6,7 @@ export default {
     BACKGROUND_TAG: "#282124",
 
     NOTE_COLOR: "hsla(349, 100%, 76%, 0.05)",
-    TAG_COLOR: "#312E38",
+    TAG_COLOR: "#E5E5E5",
 
 
     WHITE: "#F4EDE8",
