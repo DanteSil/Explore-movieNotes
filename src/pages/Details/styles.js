@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
+  
 
   display: grid;
   grid-template-rows: 116px auto;
@@ -14,14 +15,14 @@ export const Container = styled.div`
     max-width: 1137px;
     margin: 0 auto;
     margin-top: 40px;
+
   }
 
   .page {
     margin-top: 24px;
-    max-height: 581px;
+    max-height: 590px;
     padding-right: 16px;
-    overflow-y: scroll;
- 
+    overflow-y: scroll; 
 
     ::-webkit-scrollbar{
       width: 8px;
@@ -35,13 +36,7 @@ export const Container = styled.div`
       
     }
 
-    .table-content::-webkit-scrollbar-track {
-      border-radius: 8px;
-      background: transparent;
-      background-clip: content-box;
-      border-left: 8px solid rgba(255,255,255,0);
-      border-right: 8px solid rgba(255,255,255,0);
-    }
+
 
 
 

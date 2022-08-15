@@ -12,9 +12,15 @@ export const Container = styled.header`
   border-bottom: 1px solid ${({ theme }) => theme.COLORS.GRAY_LINE};
 
 
-  padding: 0 124px;
+  .content {
+    width: 1137px;
+    margin: 0 auto;
+    display: flex;
 
-  >h1 {
+    display: flex;
+    align-items: center;
+
+    >h1 {
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
@@ -24,7 +30,14 @@ export const Container = styled.header`
     color: ${({theme}) => theme.COLORS.PINK};
   }
 
-  div {
+  img {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    margin-left: 8px;
+  }
+
+  .profile {
     margin-left: 64px;
 
     display: flex;
@@ -35,16 +48,17 @@ export const Container = styled.header`
     line-height: 18px;  
 
     >strong {
+      display: flex;
       width: 97px;
     }
   }
-
-  img {
-    height: 64px;
-    width: 64px;
-    border-radius: 50%;
-    margin-left: 8px;
   }
+  
+
+
+
+
+
 `
 export const Logout = styled.button`
   border: none;

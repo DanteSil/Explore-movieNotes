@@ -1,9 +1,9 @@
 import { Container } from "./styles";
 
-export function Tags({title, datails, ...rest}) {
+export function TextArea({value, ...rest}) {
   return (
     <Container {...rest}>
-      {title}
+      {value}
     </Container>
   )
 }
