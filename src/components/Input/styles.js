@@ -7,7 +7,7 @@ export const Container = styled.div`
   
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
 
-  margin-bottom: 8px;
+
   border-radius: 10px;
   padding-left: 12px;
   
@@ -21,8 +21,8 @@ export const Container = styled.div`
 
     border: 0;
 
-
     color: ${({ theme }) => theme.COLORS.WHITE};
+
     
     &::placeholder {
     color: ${({ theme, isProfile }) => isProfile ? theme.COLORS.GRAY_200 : theme.COLORS.WHITE}

@@ -1,5 +1,7 @@
 import { Container } from "./stylex";
 
+import { Link } from "react-router-dom";
+
 import { FiPlus } from "react-icons/fi";
 
 import { Header } from "../../components/Header";
@@ -13,7 +15,7 @@ export function Home() {
       <div className="page">
         <div className="pageHeader">
           <h1>Meus filmes</h1>
-          <button><FiPlus/>Adicionar filme</button>
+          <Link to="/new"><FiPlus size={16}/>Adicionar filme</Link>
         </div>
 
         <main>

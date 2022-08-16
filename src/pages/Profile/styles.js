@@ -7,7 +7,8 @@ export const Container = styled.div`
     height: 144px;
     display: flex;
 
-    padding: 0 144PX;
+    padding: 0 144px;
+    
 
     background-color: ${({ theme }) => theme.COLORS.NOTE_COLOR};
     display: flex;
@@ -18,10 +19,15 @@ export const Container = styled.div`
 export const Form = styled.form`
     max-width: 340px;
     margin: 0 auto;
-
-    >div:nth-child(4){
-      margin-top: 24px;
+    
+    >div:nth-child(3){
+      margin-top: 8px;
     }
+  
+    >div:nth-child(4){
+      margin: 24px 0 8px;
+    }
+    
     >div:nth-child(5){
       margin-bottom: 24px;
     }

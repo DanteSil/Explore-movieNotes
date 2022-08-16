@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
-export const Container = styled.button`
+import { Link } from "react-router-dom"
+
+
+export const Container = styled(Link)`
   display: flex;
   align-items: center;
 
@@ -17,6 +20,4 @@ export const Container = styled.button`
     margin-left: 8px;
   }
   
-
-
 `

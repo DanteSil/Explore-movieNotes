@@ -1,5 +1,6 @@
-import { Container, Logout } from './styles';
+import { Container, Logout, Name } from './styles';
 
+import { Link } from "react-router-dom"
 import { Input } from '../Input';
 
 export function Header() {
@@ -10,11 +11,13 @@ export function Header() {
         <h1>RocketMovies</h1>
           <Input placeholder="Pesquisar pelo título"/>
         <div className='profile'>
-          <strong>Ramon Lima</strong>
-          <Logout>Sair</Logout>
+          <Name to="/profile">Ramon Lima</Name>
+          <Logout to="/">Sair</Logout>
         </div>
 
-        <img src="https://github.com/DanteSil.png" alt="Foto do usuário" />
+        <Link to="/profile">
+          <img src="https://github.com/DanteSil.png" alt="Foto do usuário" />
+        </Link>
       </div>
       
 

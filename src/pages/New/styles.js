@@ -17,6 +17,22 @@ export const Container = styled.div`
 
 export const Form = styled.form`
   margin-top: 24px;
+  padding-right: 8px;
+
+  max-height: 685px;
+  overflow-y: auto;
+
+  ::-webkit-scrollbar{
+      width: 8px;
+
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: ${({theme}) =>theme.COLORS.PINK};
+      border-radius: 8px;
+      width: 8px;
+      
+    }
 
   h1 {
     font-weight: 500;

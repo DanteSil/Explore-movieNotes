@@ -19,7 +19,7 @@ export function New() {
 
           <div className="inputs">
             <Input type="text" placeholder="Título"/>
-            <Input type="text" placeholder="Sua nota (de 0 a 5)"/>
+            <Input type="number" placeholder="Sua nota (de 0 a 5)"/>
           </div>
           <TextArea type="textarea" placeholder="Observações"/>
 

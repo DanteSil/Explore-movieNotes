@@ -16,6 +16,13 @@ export const Form = styled.form`
 
   padding: 0 134px;
 
+  >div:nth-child(4) {
+    margin-bottom: 8px;
+  }
+  >div:nth-child(5) {
+    margin-bottom: 8px;
+  }
+
   >h1 {
     color: ${({ theme }) => theme.COLORS.PINK};
 
@@ -40,17 +47,19 @@ export const Form = styled.form`
   }
 
   .button {
-    margin: 24px 0 42px;
+    margin: 16px 0 42px;
   }
 
   >a {
     color: ${({ theme }) => theme.COLORS.PINK};
 
-    text-align: center;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  >div:nth-child(4) {
-    margin-bottom: 8px;
+    >svg {
+      margin-right: 8px;
+    }
   }
 `
 

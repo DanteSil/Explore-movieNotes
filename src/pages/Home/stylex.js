@@ -48,10 +48,9 @@ export const Container = styled.div`
       line-height: 42px;
     }
 
-    button {
+    a {
       height: 48px;
       width: 207px;
-      border:  none;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -69,5 +68,4 @@ export const Container = styled.div`
       }
     }
   }
-
 `
