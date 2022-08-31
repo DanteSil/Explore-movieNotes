@@ -3,7 +3,13 @@ import { Container, Logout, Name } from './styles';
 import { Link } from "react-router-dom"
 import { Input } from '../Input';
 
+import { useAuth } from '../../hooks/auth';
+
 export function Header() {
+  const {signOut} = useAuth()
+  function handleSignOut() {
+    signOut()
+  }
   return (
     <Container>
       
@@ -12,7 +18,7 @@ export function Header() {
           <Input placeholder="Pesquisar pelo título"/>
         <div className='profile'>
           <Name to="/profile">Ramon Lima</Name>
-          <Logout to="/">Sair</Logout>
+          <Logout to="#" onClick={handleSignOut}>Sair</Logout>
         </div>
 
         <Link to="/profile">

@@ -1,14 +1,24 @@
-import { Container, Form, Background } from "./styles";
+import { useState } from "react";
 
+import { Container, Form, Background } from "./styles";
 import { Link } from "react-router-dom";
 
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
-import { ButtonText } from "../../components/ButtonText";
 
 import { FiMail, FiLock } from 'react-icons/fi';
 
+import { useAuth } from "../../hooks/auth";
+
 export function SignIn() {
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const { signIn } = useAuth()
+
+  function handleSignIn() {
+    signIn({email, password})
+  }
+
   return (
     <Container>
       <Form>
@@ -16,10 +26,20 @@ export function SignIn() {
         <p>Aplicação para acompanhar tudo que assistir.</p>
         <h2>Faça seu login</h2>
 
-        <Input type="text" placeholder="E-mail" icon={FiMail}/>
-        <Input type="password" placeholder="Senha" icon={FiLock}/>
+        <Input type="text" 
+        placeholder="E-mail" 
+        icon={FiMail}
+        onChange={e => setEmail(e.target.value)}
+        />
 
-        <Button isNew title="Entrar"/>
+        <Input 
+        type="password" 
+        placeholder="Senha" 
+        icon={FiLock}
+        onChange={e => setPassword(e.target.value)}
+        />
+
+        <Button isNew title="Entrar" onClick={handleSignIn}/>
 
         <Link to="/register">
           Criar conta
