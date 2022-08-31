@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
+import { ButtonText } from "../../components/ButtonText";
 
 import { FiMail, FiLock } from 'react-icons/fi';
 
@@ -18,11 +19,12 @@ export function SignIn() {
         <Input type="text" placeholder="E-mail" icon={FiMail}/>
         <Input type="password" placeholder="Senha" icon={FiLock}/>
 
-        <div className="button">
-          <Button isNew title="Entrar"/>
-        </div>
+        <Button isNew title="Entrar"/>
 
-        <Link to="/register">Criar conta</Link>    
+        <Link to="/register">
+          Criar conta
+        </Link>
+
       </Form>
 
       <Background />

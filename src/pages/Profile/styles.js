@@ -5,14 +5,16 @@ export const Container = styled.div`
   >header {
     width: 100%;
     height: 144px;
-    display: flex;
 
     padding: 0 144px;
     
-
     background-color: ${({ theme }) => theme.COLORS.NOTE_COLOR};
     display: flex;
-    align-items: center;
+
+
+    .backButton {
+      margin-top: 64px;
+    }
   }
   `
 

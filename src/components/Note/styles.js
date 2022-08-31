@@ -24,6 +24,7 @@ export const Container = styled.button`
   .rating {
     display: flex;
     margin-top: 5px;
+    text-align: start;
   }
   
   >p {

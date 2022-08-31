@@ -56,6 +56,7 @@ export const Container = styled.div`
       justify-content: center;
       border-radius: 8px;
 
+
       background-color: ${({theme}) => theme.COLORS.PINK};
       color: ${({theme}) => theme.COLORS.BLACK};
       

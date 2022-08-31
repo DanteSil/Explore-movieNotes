@@ -1,19 +1,14 @@
 import styled from "styled-components";
 
-
 export const Container = styled.div`
-  display: flex;
-  gap: 6px;
+  width: 100%;
 
-  .star-icon {
-
-  list-style-type: none;
-  color: ${({theme}) => theme.COLORS.PINK};
-
-  
-
-  &:hover{
-    cursor: pointer;
+  .on {
+    fill: ${({theme}) => theme.COLORS.PINK};
   }
+
+  .off {
+    color: ${({theme}) => theme.COLORS.GRAY_300};
   }
 `
+

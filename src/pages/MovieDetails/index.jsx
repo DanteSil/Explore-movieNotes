@@ -1,30 +1,28 @@
-import { Container, Rating } from "./styles";
+import { Container } from "./styles";
+import { Rating } from "../../components/Rating";
 
 import { IoTimeOutline } from 'react-icons/io5'
 import { RiStarFill, RiStarLine  } from 'react-icons/ri'
+import { FiArrowLeft } from 'react-icons/fi' ;
 
 import { Header } from '../../components/Header'
-import { BackButton } from '../../components/BackButton'
+import { ButtonText } from '../../components/ButtonText'
 import { Tags } from '../../components/Tags'
 
-export function Details() {
+export function MovieDetails() {
   return (
     <Container>
       <Header />
       <main>
 
-      <BackButton />
+      <ButtonText icon={FiArrowLeft} title="Voltar"/>
 
         <div className="page">
             <div className="description">
               Interestellar
-              <Rating>
-                <li className="star-icon on" >&#9733;</li>
-                <li className="star-icon" >&#9733;</li>
-                <li className="star-icon" >&#9733;</li>
-                <li className="star-icon" >&#9733;</li>
-                <li className="star-icon" >&#9734;</li>
-              </Rating>
+              <Rating 
+              size={20}
+              />
             </div>
 
             <div className="user-description">
@@ -75,9 +73,6 @@ export function Details() {
 
         </div>
 
-
-
-        
       </main>
     </Container>
   )

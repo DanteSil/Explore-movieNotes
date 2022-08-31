@@ -39,19 +39,30 @@ export const Form = styled.form`
     line-height: 32px;
   }
 
-  .button {
-    margin: 24px 0 42px;
-  }
-
   >a {
     color: ${({ theme }) => theme.COLORS.PINK};
 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
     text-align: center;
+
+    margin-top: 42px;
   }
 
   >div:nth-child(4) {
     margin-bottom: 8px;
   }
+
+  >div:nth-child(5) {
+    margin-bottom: 24px ;
+  }
+
+  >div:nth-child(7) {
+    margin-top: 42px ;
+  }
+  
+
 `
 
 export const Background = styled.div`

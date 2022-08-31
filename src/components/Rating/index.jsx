@@ -1,13 +1,20 @@
 import { Container } from "./styles";
+import { IoMdStar, IoMdStarOutline} from 'react-icons/io'
 
-export function Rating() {
-  return (
+export function Rating({size, value, ...rest}) {
+  const rating = 2
+  return(
     <Container>
-      <li className="star-icon on" >&#9733;</li>
-      <li className="star-icon" >&#9733;</li>
-      <li className="star-icon" >&#9733;</li>
-      <li className="star-icon" >&#9733;</li>
-      <li className="star-icon" >&#9734;</li>
+        {
+          [...Array(5)].map((star, index) => (
+            <IoMdStar
+            size={size}
+            key={index}
+            className={index < rating ? "on" : "off"}               
+            />
+          ))
+        }
     </Container>
+
   )
 }

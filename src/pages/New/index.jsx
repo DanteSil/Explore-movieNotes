@@ -1,18 +1,20 @@
 import { Container, Form } from "./styles";
 
-import { Header } from '../../components/Header'
-import { BackButton } from '../../components/BackButton'
-import { Input } from '../../components/Input'
-import { TextArea } from '../../components/TextArea'
-import { NoteItem } from '../../components/NoteItem'
-import { Button } from '../../components/Button'
+import {  FiArrowLeft } from 'react-icons/fi' ;
+
+import { Header } from '../../components/Header';
+import { ButtonText } from '../../components/ButtonText';
+import { Input } from '../../components/Input';
+import { TextArea } from '../../components/TextArea';
+import { NoteItem } from '../../components/NoteItem';
+import { Button } from '../../components/Button';
 
 export function New() {
   return (
     <Container>
       <Header/>
       <main>
-        <BackButton />
+        <ButtonText icon={FiArrowLeft} title="Voltar"/>
 
         <Form>
           <h1>Novo Filme</h1>

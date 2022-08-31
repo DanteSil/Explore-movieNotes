@@ -2,7 +2,9 @@ import { Container, Form, Avatar } from "./styles";
 
 import {FiCamera, FiUser, FiMail, FiLock} from 'react-icons/fi'
 
-import { BackButton } from "../../components/BackButton";
+import { FiArrowLeft } from 'react-icons/fi'
+
+import { ButtonText } from "../../components/ButtonText";
 import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
 
@@ -10,7 +12,9 @@ export function Profile() {
   return (
     <Container>
       <header>
-        <BackButton />
+        <div className="backButton">
+         <ButtonText icon={FiArrowLeft} title="Voltar"/>
+        </div>
       </header>
 
       <Form>
@@ -38,12 +42,12 @@ export function Profile() {
 
         <Input 
         placeholder="Senha Atual"
-        icon={FiMail}
+        icon={FiLock}
         type="password"
         />
         <Input 
         placeholder="Nova Senha"
-        icon={FiMail}
+        icon={FiLock}
         type="password"
         />
 
