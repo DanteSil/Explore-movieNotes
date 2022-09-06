@@ -12,7 +12,7 @@ export const Container = styled.div`
   "content";
 
   >main {
-    max-width: 1137px;
+    width: 1137px;
     margin: 0 auto;
     margin-top: 40px;
 
@@ -20,7 +20,7 @@ export const Container = styled.div`
 
   .page {
     margin-top: 24px;
-    max-height: 590px;
+    height: 640px;
     padding-right: 16px;
     overflow-y: scroll; 
 
@@ -40,7 +40,7 @@ export const Container = styled.div`
 
 
 
-    .description {
+    .title {
       display: flex;
       align-items: center;
       gap: 19px;
@@ -51,7 +51,7 @@ export const Container = styled.div`
       
     }
 
-    .content {
+    .description {
       margin-top: 40px;
 
       font-weight: 400;

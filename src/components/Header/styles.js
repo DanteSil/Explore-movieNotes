@@ -28,7 +28,6 @@ export const Container = styled.header`
     margin: 0 auto;
     display: flex;
 
-    display: flex;
     align-items: center;
 
     >h1 {
@@ -39,8 +38,14 @@ export const Container = styled.header`
     margin-right: 64px;
 
     color: ${({theme}) => theme.COLORS.PINK};
+
   }
 
+  .searchBar {
+    width: 645px;
+  
+  }
+  
   img {
     height: 64px;
     width: 64px;
@@ -60,10 +65,37 @@ export const Container = styled.header`
 
     line-height: 18px;  
 
-
   }
   }
 `
+export const Search = styled.ul`
+  list-style: none;
+  position: fixed;
+  
+
+  >li {
+    background: transparent;
+
+    cursor: default;
+
+    color: ${({ theme }) => theme.COLORS.GRAY_200};
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
+
+    height: 40px;
+    width:  645px;;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding-left: 20px;
+  }
+
+  >li:hover {
+    background-color: ${({ theme }) => theme.COLORS.GRAY_LINE};
+    border-radius: 8px;
+    
+  }
+`
+
 export const Name = styled(Link)`
       width: 107px;
       height: 24px;

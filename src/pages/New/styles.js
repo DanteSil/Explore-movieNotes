@@ -17,7 +17,7 @@ export const Container = styled.div`
 
 export const Form = styled.form`
   margin-top: 24px;
-  padding-right: 8px;
+  padding-right: 16px;
 
   max-height: 685px;
   overflow-y: auto;
@@ -61,6 +61,7 @@ export const Form = styled.form`
 
   .tags {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
 
     padding: 16px;
@@ -69,7 +70,6 @@ export const Form = styled.form`
     background: ${({theme}) => theme.COLORS.BACKGROUND_900};
     margin-top: 24px;
     border-radius: 8px;
-    align-items: center;
   }
 
   .buttons {

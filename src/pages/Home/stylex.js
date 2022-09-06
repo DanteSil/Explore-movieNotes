@@ -16,9 +16,9 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     gap: 24px;
-    height: 580px;
+    height: 640px;
 
-    padding-right: 8px;
+    padding-right: 16px;
 
     overflow-y: auto;
 

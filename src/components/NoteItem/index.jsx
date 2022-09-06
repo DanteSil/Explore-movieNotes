@@ -11,8 +11,8 @@ export function NoteItem({value, isNew, onClick, ...rest}) {
       readOnly={!isNew}
       {...rest}/>
 
-      <button onClick={onClick}>
-        {isNew ? <FiPlus/> : <FiX/>}
+      <button type='button' onClick={onClick}>
+        {isNew ? <FiPlus size={20}/> : <FiX size={20}/>}
       </button>
     </Container>
   )

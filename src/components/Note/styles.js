@@ -23,12 +23,12 @@ export const Container = styled.button`
 
   .rating {
     display: flex;
-    margin-top: 5px;
+    margin-top: 8px;
     text-align: start;
   }
   
   >p {
-    margin-top: 15px;
+    margin-top: 10px;
     
 
     width: 1057px;
@@ -51,6 +51,6 @@ export const Container = styled.button`
   >footer {
     width: 100%;
     display: flex;
-    margin-top: 15px;
+    margin-top: 25px;
   }
 `
