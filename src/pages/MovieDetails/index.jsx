@@ -1,34 +1,34 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import { useAuth } from "../../hooks/auth";
+import { api } from "../../services/api";
 
 import { Container } from "./styles";
 
-import { IoTimeOutline } from 'react-icons/io5'
+import { Header } from '../../components/Header';
+import { ButtonText } from '../../components/ButtonText';
+import { Tags } from '../../components/Tags';
+import { Rate } from '../../components/Rate';
+
+import { IoTimeOutline } from 'react-icons/io5';
 import { FiArrowLeft } from 'react-icons/fi' ;
 
-import { Header } from '../../components/Header'
-import { ButtonText } from '../../components/ButtonText'
-import { Tags } from '../../components/Tags'
-import { Rate } from '../../components/Rate'
-
-import { api } from "../../services/api";
+import { useAuth } from "../../hooks/auth";
 
 export function MovieDetails() {
   const [data, setData] = useState();
   const params = useParams();
 
-  const {user} = useAuth()
+  const {user} = useAuth();
 
-  const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : placeHolderAvatar
+  const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : placeHolderAvatar;
 
   useEffect(() => {
     async function fetchNote() {
-      const response = await api.get(`/notes/${params.id}`)
-      setData(response.data)
+      const response = await api.get(`/notes/${params.id}`);
+      setData(response.data);
     }
-    fetchNote()
+    fetchNote();
   }, [])
   return (
     <Container>

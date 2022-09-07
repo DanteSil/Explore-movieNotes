@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 
 import { ThemeProvider } from 'styled-components';
 
-import  GlobalStyle  from './styles/global';
+import GlobalStyle  from './styles/global';
 import theme from './styles/themes';
 
 import { Routes } from './Routes';
 
-import { AuthProvider } from './hooks/auth'
+import { AuthProvider } from './hooks/auth';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

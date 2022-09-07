@@ -12,5 +12,5 @@ export function Routes() {
     <BrowserRouter>
       { user ? <AppRoutes /> : <AuthRoutes/> }
     </BrowserRouter>
-  )
-  }
+  );
+  };

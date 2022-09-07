@@ -1,11 +1,13 @@
-import { Container, Logout, Name, Search } from './styles';
-
+import { useState, useEffect } from 'react';
 import { Link, useNavigate } from "react-router-dom"
-import { Input } from '../Input';
 
 import { useAuth } from '../../hooks/auth';
 import { api } from '../../services/api';
-import { useState, useEffect } from 'react';
+
+import { Container, Logout, Name, Search } from './styles';
+
+import { Input } from '../Input';
+
 
 export function Header() {
   const {signOut, user} = useAuth()

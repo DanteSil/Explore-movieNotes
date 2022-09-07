@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import { useNavigate } from "react-router-dom";
 
 import { api } from "../../services/api";
@@ -15,23 +14,23 @@ import { TextArea } from '../../components/TextArea';
 import { NoteItem } from '../../components/NoteItem';
 import { Button } from '../../components/Button';
 
-export function New() {
+export function NewMovies() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [rate, setRate] = useState("");
   
   const [tags, setTags] = useState([]);
-  const [newTag, setNewTag] = useState("")
+  const [newTag, setNewTag] = useState("");
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   
   function handleAddTags() {
-    setTags(prevState => [...prevState, newTag])
-    setNewTag("")
+    setTags(prevState => [...prevState, newTag]);
+    setNewTag("");
   }
   
   function handleRemoveTag(tagDeleted) {
-    setTags(prevState => prevState.filter(tag => tag !== tagDeleted))
+    setTags(prevState => prevState.filter(tag => tag !== tagDeleted));
   }
 
 

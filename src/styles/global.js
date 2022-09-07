@@ -23,6 +23,7 @@ export default createGlobalStyle`
 
   a {
     text-decoration: none;
+    font-family: 'Roboto Slab', serif;
   }
 
   button, a {

@@ -21,17 +21,17 @@ export function Home() {
   const navigate = useNavigate();
 
   function handleDetail(id) {
-    navigate(`/details/${id}`)
+    navigate(`/details/${id}`);
   }
 
   useEffect(() => {
     async function fetchNotes () {
       const response = await api.get(`/notes?title=${title}`);
-      setNotes(response.data)
-      console.log(notes)
+      setNotes(response.data);
+      console.log(notes);
     }
-    fetchNotes()
-  }, [])
+    fetchNotes();
+  }, []);
   return (
     <Container>
       <Header/>
