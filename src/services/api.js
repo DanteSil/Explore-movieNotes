@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "http://localhost:4321"
+  baseURL: "https://rocketmovies-api492.herokuapp.com"
 });
