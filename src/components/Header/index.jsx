@@ -8,6 +8,8 @@ import { Container, Logout, Name, Search } from './styles';
 
 import { Input } from '../Input';
 
+import placeHolderAvatar from '../../assets/avatar_placeholder.svg'
+
 
 export function Header() {
   const {signOut, user} = useAuth()
